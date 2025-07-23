@@ -12,13 +12,13 @@
 
 <body>
     <div>
-        <!-- @auth
-            @if(auth()->user()->role === 'pengelola')
-                @include('components.sidebar.pengelola')
-            @else
-                @include('components.sidebar.penyewa')
-            @endif
-        @endauth -->
+        @auth
+        @if(auth()->user()->role === 'pengelola')
+        @include('components.sidebar.pengelola')
+        @else
+        @include('components.sidebar.penyewa')
+        @endif
+        @endauth
 
         <main>
             {{ $slot }}
