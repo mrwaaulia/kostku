@@ -13,7 +13,7 @@ use App\Livewire\Dashboard\Pengelola\Index as PengelolaDashboard;
 // });
 
 
-Route::get('/', Login::class)->name('login');
+Route::get('/login', Login::class)->name('login');
 Route::get('/register', Register::class)->name('register');
 Route::get('/forgot-password', ForgotPassword::class)->name('forgot-password');
 Route::get('/verification-password', VerificationPassword::class)->name('verification-password');

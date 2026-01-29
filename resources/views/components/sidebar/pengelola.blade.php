@@ -1,5 +1,5 @@
 <!-- resources/views/components/sidebar/pengelola.blade.php -->
-<nav class="w-64 bg-green-600 text-white min-h-screen p-4">
+<nav class="w-64 bg-green-600 text-white h-screen p-4 fixed inset-y-0 left-0">
     <div class="mb-8 text-center">
         <h2 class="text-xl font-bold">MENU PENGELOLA</h2>
         <p class="text-sm">{{ auth()->user()->name }}</p>

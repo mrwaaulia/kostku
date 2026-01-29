@@ -10,8 +10,8 @@
     @livewireStyles
 </head>
 
-<body>
-    <div>
+<body class="bg-green-400">
+    <div class="bg-red-400">
         @auth
         @if(auth()->user()->role === 'pengelola')
         @include('components.sidebar.pengelola')
@@ -19,10 +19,11 @@
         @include('components.sidebar.penyewa')
         @endif
         @endauth
-
-        <main>
-            {{ $slot }}
-        </main>
+        <div class="bg-blue-400 ml-64 p-4 min-h-screen">
+            <main>
+                {{ $slot }}
+            </main>
+        </div>
     </div>
     @livewireScripts
     @vite('resources/js/app.js')
