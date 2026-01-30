@@ -5,11 +5,14 @@ namespace App\Livewire\Auth;
 use Livewire\Component;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
+use Livewire\Attributes\Layout;
+use Livewire\Attributes\Title;
 
 class Login extends Component
 {
     // Tentukan layout yang dipakai oleh komponen ini
-    public string $layout = 'components.layouts.auth';
+    // #[Title('Login')]
+    #[Layout('components.layouts.auth')]
 
     public $email = '';
     public $password = '';

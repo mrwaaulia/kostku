@@ -1,5 +1,5 @@
 <!-- resources/views/components/sidebar/pengelola.blade.php -->
-<nav class="w-64 bg-[#53AD9F] text-white min-h-screen px-4 fixed inset-y-0 left-0 py-10 rounded-r-lg">
+<nav class="w-64 bg-[#53AD9F] text-white min-h-screen px-4 fixed inset-y-0 left-0 py-10 rounded-r-lg flex flex-col">
     <div class="mb-8 text-center">
         <div class="flex gap-2 items-end justify-center mb-4">
             <img src="{{ asset('assets/logo.png') }}" alt="KOSTKU" class="w-12 h-10">
