@@ -13,7 +13,7 @@
         <div class="w-full px-6 sm:px-10 md:px-20 lg:px-40 py-10">
             <form class="max-w-md w-full  mx-auto" wire:submit.prevent="login">
                 <h1 class="text-3xl sm:text-4xl font-semibold mb-4 text-center">Login</h1>
-                <p class="text-lg sm:text-xl font-normal mb-10 sm:mb-18 text-center">Masukkan username dan password anda untuk login</p>
+                <p class="text-lg sm:text-xl font-normal mb-10 sm:mb-18 text-center">Masukkan username dan password anda marwa untuk login</p>
 
                 @if ($errors->any())
                 <div class="mb-4 text-red-600 text-center">
